@@ -9,7 +9,7 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    files: ["**/*.js", "dist", "build", "node_modules"],
+    files: ["**/*.js', 'dist', 'build', 'node_modules"],
     ...tseslint.configs.disableTypeChecked,
   },
   eslintPluginPrettierRecommended,
@@ -28,6 +28,8 @@ export default [
         "error",
         { argsIgnorePattern: "^_" },
       ],
+      quotes: ["error", "double"],
+      semi: ["error", "always"],
     },
   },
 ];
